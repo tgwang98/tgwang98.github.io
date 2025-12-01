@@ -4,21 +4,10 @@ description = "Professional service and community involvement."
 
 [[items]]
 title = "Referee"
-subtitle = "Reports on Progress in Physics and IOP journals"
-date = "2025–present"
-content = "Referee for IOP journals, including Reports on Progress in Physics."
-
-[[items]]
-title = "Referee"
-subtitle = "Nature, Nature Communications"
-date = "2024–present"
-content = "Reviewed manuscripts on correlated 2D materials and quantum Hall physics."
-
-[[items]]
-title = "Referee"
-subtitle = "Physical Review X, Physical Review Letters, Physical Review B, Physical Review Research"
+subtitle = "Nature, Nature Communications; Reports on Progress in Physics and other IOP journals; Physical Review X, Physical Review Letters, Physical Review B, Physical Review Research"
 date = "2022–present"
-content = "Refereed articles in condensed matter theory and quantum many-body physics."
+content = "Refereed manuscripts on strongly correlated 2D materials, fractional quantum Hall physics, and quantum many-body theory."
+
 
 [[items]]
 title = "Student Advisor"

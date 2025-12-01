@@ -30,7 +30,7 @@ import requests
 # --------- Configuration ---------
 
 AUTHOR_PROFILE_URL = "https://arxiv.org/a/wang_t_9.html"
-OUTPUT_BIB = os.path.join("content", "cv.md")
+OUTPUT_BIB = os.path.join("content", "publications.bib")
 MAX_ENTRIES = 500  # safety cap
 
 # arXiv IDs (without version) that should be "selected"
@@ -288,7 +288,7 @@ def arxiv_entry_to_bibtex(entry: ArxivEntry) -> str:
     if base_id in SELECTED_IDS:
         fields.append("  selected     = {true}")
         # preview image, e.g. public/papers/2503.16738.png
-        fields.append(f"  preview      = {{papers/{base_id}.png}}")
+        fields.append(f"  preview      = {{{base_id}.png}}")
     else:
         fields.append("  selected     = {false}")
         # Do NOT emit preview at all for non-selected papers

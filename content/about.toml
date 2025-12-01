@@ -3,9 +3,12 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Computational Physics",
-  "Mathematical Principles",
-  "Proof of Theorems"
+  "Strongly correlated 2D materials and moiré systems",
+  "Fractional quantum Hall and fractional Chern insulators",
+  "Anyonic exciton condensation and quantum anomalous Hall states",
+  "Unconventional superconductivity and quantum criticality",
+  "Tensor networks (DMRG, isoTNS) and numerical many-body methods",
+  "Topological quantum field theory and anomalies"
 ]
 
 [[sections]]
@@ -26,4 +29,3 @@ id = "news"
 type = "list"
 title = "News"
 source = "news.toml"
-

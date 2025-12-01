@@ -324,7 +324,11 @@ def arxiv_entry_to_bibtex(entry: ArxivEntry) -> str:
 
     # DOI if available
     if entry.doi:
-        fields.append(f"  doi          = {{{entry.doi}}}")
+        doi_value = entry.doi
+    else:
+        # Generic arXiv DOI format
+        doi_value = f"10.48550/arXiv.{base_id}"
+    fields.append(f"  doi          = {{{doi_value}}}")
 
     # Abstract and short description
     if entry.abstract:

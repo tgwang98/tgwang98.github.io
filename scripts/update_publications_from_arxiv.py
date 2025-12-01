@@ -34,7 +34,7 @@ import requests
 AUTHOR_PROFILE_URL = "https://arxiv.org/a/wang_t_9.html"
 
 # Output BibTeX file path (relative to repo root).
-OUTPUT_BIB = os.path.join("content", "publications.bib")
+OUTPUT_BIB = os.path.join("content", "cv.md")
 
 # Maximum number of entries to fetch (can be large, Atom feed is paginated by arXiv).
 MAX_ENTRIES = 500

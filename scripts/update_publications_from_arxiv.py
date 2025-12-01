@@ -65,6 +65,60 @@ class ArxivEntry:
 
 # --------- Helpers ---------
 
+def parse_authors_from_entry(entry) -> list[str]:
+    """
+    Extract a clean list of author names from an arXiv feed entry.
+
+    We want a list like:
+        ["Junkai Dong", "Taige Wang", "Tianle Wang", ...]
+    regardless of whether the feed gives us multiple <author> tags
+    or a single comma-separated string.
+    """
+    names: list[str] = []
+
+    # Preferred: use entry.authors if available
+    raw_authors = getattr(entry, "authors", None)
+    if raw_authors:
+        # Some feeds put one name per element,
+        # some cram multiple names into a single "name" string.
+        for a in raw_authors:
+            raw = (a.get("name") or "").strip()
+            if not raw:
+                continue
+            # If there is an "and" already, split on it
+            if " and " in raw:
+                parts = [p.strip() for p in raw.split(" and ") if p.strip()]
+                names.extend(parts)
+            # Otherwise split on commas (typical "A, B, C" style)
+            elif "," in raw:
+                parts = [p.strip() for p in raw.split(",") if p.strip()]
+                names.extend(parts)
+            else:
+                names.append(raw)
+
+    # Fallback: single "author" string, if present
+    if not names:
+        raw = getattr(entry, "author", "") or ""
+        raw = raw.strip()
+        if raw:
+            if " and " in raw:
+                parts = [p.strip() for p in raw.split(" and ") if p.strip()]
+                names.extend(parts)
+            elif "," in raw:
+                parts = [p.strip() for p in raw.split(",") if p.strip()]
+                names.extend(parts)
+            else:
+                names.append(raw)
+
+    # Final cleanup: normalize whitespace
+    cleaned = []
+    for n in names:
+        n = re.sub(r"\s+", " ", n).strip()
+        if n:
+            cleaned.append(n)
+
+    return cleaned
+
 def author_profile_to_atom2_url(profile_url: str) -> str:
     """
     Convert an arXiv author profile HTML URL to the Atom2 feed URL.
@@ -156,7 +210,7 @@ def parse_entries(feed: feedparser.FeedParserDict) -> List[ArxivEntry]:
 
         title = clean_whitespace(e.get("title", ""))
 
-        authors = [a.get("name", "").strip() for a in e.get("authors", [])]
+        authors = parse_authors_from_entry(e)
 
         published_str = e.get("published", "")
         updated_str = e.get("updated", "") or published_str

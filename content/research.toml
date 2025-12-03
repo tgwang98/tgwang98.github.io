@@ -4,7 +4,7 @@ description = "Broad directions I am currently pursuing in condensed matter theo
 
 [[items]]
 title = "Strongly correlated 2D materials and moiré systems"
-subtitle = "Graphene multilayers, twisted TMDs, and engineered flat bands"
+subtitle = "Graphene multilayers and twisted TMDs"
 # Put a moiré illustration at public/images/moire_lattice.png
 image = "/moire_lattice.png"
 content = """
@@ -32,12 +32,27 @@ tags = ["Moiré materials", "Graphene multilayers", "QAH & FQAH", "Unconventiona
 
 
 [[items]]
-title = "Fractional quantum Hall states and fractional Chern insulators"
-subtitle = "Anyon condensation, non-Abelian order, and criticality"
+title = "Fractional quantum Hall effect and non-Abelian anyons"
+subtitle = "Topological quantum computation and new topological phases of matter"
 content = """
-My work focuses on understanding fractional quantum Hall and fractional Chern insulator phases, including their non-Abelian excitations, edge physics, and continuous phase transitions out of topological order. I use a combination of field theory, tensor networks, and microscopic modeling that can be directly compared with experiments.
+My interest in the fractional quantum Hall effect (FQHE) is strongly driven by experiment. I think of FQHE as a concrete platform where we can design and test microscopic ideas about topological order. Two long-term goals guide most of my work in this area:
+
+1. To build a robust platform for **topological quantum computation** based on non Abelian anyons  
+2. To discover and understand **new topological phases of matter** that go beyond our standard paradigms
+
+There are many proposals for topological quantum computation based on nanowires, proximitized superconductors and related systems. The platform I find most compelling is non Abelian states in the FQHE. The samples can be extremely clean, the anyons can be manipulated with gates and interferometry, and some non Abelian states are powerful enough in principle to support universal quantum computation.
+
+In bilayer graphene, Pfaffian like states at even-denominator fillings are particularly promising. Together with collaborators, we have outlined a protocol for how such a state could be used for topological quantum computation, from initializing topological degrees of freedom to implementing controlled braiding operations and reading out the result.
+
+Several key steps have already been demonstrated in experiment, including new device architectures and lithography, tunneling and STM probes that access fractional edge structure, interferometry that reveals fractional statistics, and thermodynamic measurements that are sensitive to the entropy of non Abelian anyons.
+
+A second thread in my FQHE work focuses on new topological phases that naturally emerge in graphene based quantum Hall systems. Graphene allows multilayer structures and additional valley degrees of freedom. This opens the door to topological orders that do not appear in single layer GaAs, to unconventional phase transitions between them, and to regimes where topological order coexists with symmetry breaking states.
+
+Within this broader context, we introduced the notion of an **anyon superfluid**. In the bilayer and trilayer settings we studied, there is no simple boson that condenses in the usual way. Instead, one can think in terms of partons forming their own quantum Hall states, and the resulting low energy theory describes a superfluid that retains an underlying topological order. This revives the old idea of anyon superconductivity in a concrete and controlled setting.
+
+For me, FQHE in graphene and related platforms is therefore both a playground for topological quantum computation and a laboratory for discovering new forms of topological order and their unusual descendants, such as anyon superfluids and daughter states.
 """
-tags = ["FQH", "FCI", "Topological order"]
+tags = ["FQHE", "Non-Abelian anyons", "Topological quantum computation", "Anyon superfluids"]
 
 [[items]]
 title = "Unconventional superconductivity near topological phases"

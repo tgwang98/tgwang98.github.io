@@ -34,6 +34,7 @@ tags = ["Moiré materials", "Graphene multilayers", "QAH & FQAH", "Unconventiona
 [[items]]
 title = "Fractional quantum Hall effect and non-Abelian anyons"
 subtitle = "Topological quantum computation and new topological phases of matter"
+image = "/interfrometer.jpg"
 content = """
 My interest in the fractional quantum Hall effect (FQHE) is strongly driven by experiment. I think of FQHE as a concrete platform where we can design and test microscopic ideas about topological order. Two long-term goals guide most of my work in this area:
 

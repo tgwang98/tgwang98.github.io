@@ -142,7 +142,8 @@ function parseAuthors(authorsStr: string): Array<{ name: string; isHighlighted?:
       
       // Check if this is Taige Wang (to highlight)
       const isHighlighted = name.toLowerCase().includes('taige wang') || 
-                          name.toLowerCase().includes('wang taige');
+                          name.toLowerCase().includes('wang taige') || 
+                          name.toLowerCase().includes('t. wang');
       
       return {
         name: cleanBibTeXString(name),

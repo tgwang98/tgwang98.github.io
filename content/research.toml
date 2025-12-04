@@ -12,19 +12,19 @@ My long-term goal is to use moiré and other 2D platforms as a controllable labo
 
 Moiré systems are *highly tunable* in a way that is rare in traditional condensed-matter materials. By changing density, displacement field, twist angle, or magnetic field, the same device can realize very different phases: in graphene multilayers and twisted TMDs one can see quantum anomalous Hall (QAH) states, fractional QAH (FQAH) states, and superconductivity in a single device. This tunability makes it possible to build microscopic models that can be quantitatively confronted with experiment, rather than just qualitatively compared.
 
-The first step in organizing this landscape is to understand the “parent” states from which these exotic phases descend. Because these systems carry spin and valley degrees of freedom, the parent phases are often various forms of magnetic or isospin order. Different patterns may or may not break time-reversal symmetry, and therefore carry a net Berry curvature. In rhombohedral graphene and twisted TMDs, we mapped out the first magnetic phase diagrams with realistic models and identified the competition between different orders. QAH then naturally appears in orders that produce Chern bands.
+The first step in organizing this landscape is to understand the “parent” states from which these exotic phases descend. Because these systems carry spin and valley degrees of freedom, the parent phases are often various forms of magnetic or isospin order. Different patterns may or may not break time-reversal symmetry, and therefore carry a net Berry curvature. In rhombohedral graphene and twisted TMDs, we mapped out the first **global phase diagrams** with realistic models and identified the competition between different orders. QAH then naturally appears in orders that produce Chern bands.
 
 The second step is to ask how far this logic extends beyond moiré superlattices. In pentalayer graphene, we discovered a new **anomalous Hall crystal** (AHC) phase: a Wigner crystal that nevertheless carries a Hall response. Here interactions spontaneously open a transport gap *without* relying on a moiré potential. In the presence of disorder this state behaves as a QAH insulator.
 
 Importantly, these 2D materials mark the first examples a QAH state is realized in an isolated Chern band. By fractionally doping these Chern bands, one obtains the long sought fractional QAH states (FQAH). Experiments by Long Ju, Xiaodong Xu and collaborators confirm this picture, and we provided quantitative microscopic calculations that match the observed phases.
 
-The more intriguing descendant phases for me are the superconductors. Many of these 2D systems exhibit superconductivity, but in different parameter windows and with different properties, suggesting potentially different mechanisms. We have proposed three broad mechanisms:
+The more intriguing descendant phases for me are the superconductors. Many of these 2D systems exhibit superconductivity, but in different parameter windows and with different properties, suggesting potentially different mechanisms. We have proposed two broad mechanisms:
 
 1. **Isospin-fluctuation-mediated pairing.** In bilayer and trilayer graphene, superconductivity tends to appear near the boundaries between competing magnetic phases, where isospin fluctuations are strongest. We analyzed how strong these fluctuations are and what pairing symmetries they naturally favor.
 
-2. **Charge-density-fluctuation-mediated pairing.** In pentalayer graphene, superconductivity appears close to the AHC phase. The phonons of an electron crystal play a role analogous to lattice phonons and can mediate superconductivity even in higher-angular-momentum pairing channels.
+# 2. **Charge-density-fluctuation-mediated pairing.** In pentalayer graphene, superconductivity appears close to the AHC phase. The phonons of an electron crystal play a role analogous to lattice phonons and can mediate superconductivity even in higher-angular-momentum pairing channels.
 
-3. **Anyon superconductivity.** This is the most exotic mechanism. In twisted TMDs, superconductivity often appears very close to FQAH states and nearby re-entrant integer quantum Hall (RIQH) phases. Using field theory, we showed that superconductivity and RIQH are the natural descendants of a FQAH state, whereas a simple metallic phase is not. Numerical work supports this picture and provides an example of superconductivity induced by purely repulsive interactions.
+2. **Anyon superconductivity.** This is the most exotic mechanism. In twisted TMDs, superconductivity often appears very close to FQAH states and nearby re-entrant integer quantum Hall (RIQH) phases. Using field theory, we showed that superconductivity and RIQH are the natural descendants of a FQAH state, whereas a simple metallic phase is not. Numerical work supports this picture and provides an example of superconductivity induced by purely repulsive interactions.
 
 Taken together, moiré and 2D materials provide a uniquely versatile setting in which one can realize QAH, FQAH, electron crystals, and several distinct routes to superconductivity. This makes it possible not only to study each phase in isolation, but to track *continuous transitions* between them and to ask which phases are the true “parent” states from which the others emerge.
 """
@@ -56,25 +56,30 @@ For me, FQHE in graphene and related platforms is therefore both a playground fo
 tags = ["FQHE", "Non-Abelian anyons", "Topological quantum computation", "Anyon superfluids"]
 
 [[items]]
-title = "Unconventional superconductivity near topological phases"
-subtitle = "Chiral pairing and fluctuation-mediated mechanisms"
+title = "Quantum criticality"
+subtitle = "Topological phase transitions, Chern–Simons–matter theories, and fuzzy-sphere methods"
 content = """
-I investigate superconducting states that emerge near Chern and fractional Chern insulators, with an emphasis on chiral pairing, anyon superfluidity, and fluctuation-mediated pairing mechanisms. A central goal is to connect microscopic models to realistic 2D materials where such phases can be realized and probed.
+Much of my work on quantum criticality focuses on strongly interacting fixed points in 2+1 dimensions. Conceptually, I am interested in critical theories that go beyond the familiar Wilson–Fisher and Gross–Neveu universality classes, and that are tightly connected to topological phases of matter. Practically, these questions are driven by concrete transitions that can be engineered in quantum Hall systems and related 2D platforms.
+
+One broad theme is the study of new kinds of quantum criticality described by Chern–Simons–matter theories, such as QED and QCD with Chern–Simons terms. These theories turn out to be directly relevant for transitions out of fractional quantum Hall states. Current theoretical understanding of these Chern–Simons–matter fixed points is still rudimentary. We do not yet have a conformal-bootstrap characterization, and it is not even obvious in general whether all of the proposed fixed points truly exist. Our study of a few examples in quantum Hall steups, including the transition between a bosonic Laughlin state and a superfluid, between a fermionic Laughlin state and a superconductor, and between the bilayer 330 and 112 states, prove the existence for these exotic critical points.
+
+A second direction is to develop tools for studying generic 2+1D conformal field theories in a way that goes beyond extracting a few critical exponents. Here fuzzy-sphere and similar constructions have turned out to be very powerful. By formulating the theory on a sphere with an SO(3) symmetry, one can organize states into angular-momentum multiplets and compute not only a few critical exponents but an entire conformal spectrum. We have applied this strategy to several examples, including the Ising and Yang–Lee CFTs and Gross–Neveu–Yukawa–type models, each of which comes with its own technical challenges and characteristic features revealed by our work.
 """
-tags = ["Superconductivity", "Anyon superfluids"]
+tags = ["Quantum criticality", "2+1D CFTs", "Chern–Simons–matter", "Fuzzy sphere"]
+
 
 [[items]]
-title = "Tensor networks and numerical many-body methods"
-subtitle = "DMRG, isoTNS, and realistic modeling"
+title = "Numerical methods for many-body systems"
+subtitle = "Tensor networks, neural quantum states, and quantum bootstrap"
 content = """
-On the numerical side, I develop and apply tensor-network methods (DMRG, isoTNS and related algorithms) to strongly correlated 2D systems. The focus is on using these tools for realistic modeling of experimental devices, including edge reconstruction, entanglement spectra, and dynamical response.
-"""
-tags = ["DMRG", "Tensor networks", "Numerical methods"]
+Many of the projects above rely on large scale numerics, but a separate thread of my work is to **develop new numerical methods** that can keep up with the questions posed by strongly correlated systems. I am especially interested in projected entangled pair states (PEPS), neural quantum states (NQS), and quantum bootstrap approaches.
 
-[[items]]
-title = "Field-theoretic descriptions and anomalies"
-subtitle = "Topological field theory, higher central charge, and emergent gauge fields"
-content = """
-Many of my projects are guided by effective field theories and anomaly considerations, such as Chern–Simons theories for quantum Hall states, emergent gauge fields, and higher central charge diagnostics of gappability. These frameworks help organize the landscape of possible phases and connect microscopic models to universal signatures.
+The success story of one dimensional tensor networks is built not only on the representational power of matrix product states, but also on the existence of efficient algorithms for computing operator expectation values. In two dimensions, PEPS in principle have very good representability, but even when a state can be written as a PEPS, computing expectation values is generically exponentially hard. In practice this severely limits which PEPS algorithms are truly usable.
+
+A major step forward was the introduction of **isometric PEPS** by Michael P. Zaletel and Frank Pollmann. Isometric PEPS form a restricted subclass of PEPS for which expectation values can be evaluated much more efficiently while still capturing a rich set of phases. We have generalized this framework to fermionic systems and used it to simulate time evolution in interacting 2D models. This makes it possible to study dynamical properties and quenches in two dimensional systems that are difficult to access with traditional methods.
+
+For **neural quantum states**, my focus has been on representability and expressivity. There is a lot of enthusiasm about NQS as a flexible ansatz for ground states and dynamics, but relatively little is known which architectures can represent which many body states efficiently. Recently we have found that a broad family of seemingly powerful NQS architectures in fact cannot efficiently represent even quite simple quantum states, which places important constraints on how they should be used in practice.
+
+Finally, **quantum bootstrap** is a recently developed set of methods to study many-body ground states and excitations. There are many basic questions that are still open, such as which operators provide the most stringent constraints, how to systematically choose an operator basis, and how to treat systems at or near a critical point. My current work in this area is aimed at understanding these structural questions so that quantum bootstrap can become a more practical tool for studying realistic models.
 """
-tags = ["Field theory", "Anomalies", "Higher central charge"]
+tags = ["Tensor networks", "PEPS", "Neural quantum states", "Quantum bootstrap", "Numerical methods"]

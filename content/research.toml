@@ -57,6 +57,7 @@ tags = ["FQHE", "Non-Abelian anyons", "Topological quantum computation", "Anyon 
 [[items]]
 title = "Quantum criticality"
 subtitle = "Topological phase transitions, Chern–Simons–matter theories, and fuzzy-sphere methods"
+image = "/gny.png"
 content = """
 Much of my work on quantum criticality focuses on strongly interacting fixed points in 2+1 dimensions. Conceptually, I am interested in critical theories that go beyond the familiar Wilson–Fisher and Gross–Neveu universality classes, and that are tightly connected to topological phases of matter. Practically, these questions are driven by concrete transitions that can be engineered in quantum Hall systems and related 2D platforms.
 
@@ -70,6 +71,7 @@ tags = ["Quantum criticality", "2+1D CFTs", "Chern–Simons–matter", "Fuzzy sp
 [[items]]
 title = "Numerical methods for many-body systems"
 subtitle = "Tensor networks, neural quantum states, and quantum bootstrap"
+image = "/isotns.png"
 content = """
 Many of the projects above rely on large scale numerics, but a separate thread of my work is to **develop new numerical methods** that can keep up with the questions posed by strongly correlated systems. I am especially interested in projected entangled pair states (PEPS), neural quantum states (NQS), and quantum bootstrap approaches.
 
@@ -82,3 +84,14 @@ For **neural quantum states**, my focus has been on representability and express
 Finally, **quantum bootstrap** is a recently developed set of methods to study many-body ground states and excitations. There are many basic questions that are still open, such as which operators provide the most stringent constraints, how to systematically choose an operator basis, and how to treat systems at or near a critical point. My current work in this area is aimed at understanding these structural questions so that quantum bootstrap can become a more practical tool for studying realistic models.
 """
 tags = ["Tensor networks", "PEPS", "Neural quantum states", "Quantum bootstrap", "Numerical methods"]
+
+[[items]]
+title = "Anomalies, LSM constraints, and higher central charge"
+subtitle = "From lattice symmetries to gravitational responses"
+content = """
+I am also interested in various kinds of anomalies, especially Lieb–Schultz–Mattis (LSM)–type anomalies and gravitational anomalies. For LSM anomalies, my focus has been on fermionic LSM and on how the anomaly behaves under projections of the Hilbert space. This naturally leads to questions about how anomalies flow under renormalization: how the UV anomaly defined on a microscopic lattice system is related to the IR anomaly of a continuum field theory description, and how much of the UV constraint survives in low energy effective models.
+
+On the gravitational side, I study a particular class of anomalies characterized by higher central charge or higher Hall conductance. These provide, together with the usual chiral anomaly, a complete set of gravitational anomalies. Recently we introduced a wave function diagnostic for such anomalies based on partial rotations of the many body state. This construction offers a controlled way to connect a bulk TQFT perspective to an edge CFT perspective. It becomes clear recently that these gravitational anomalies are not rare or esoteric objects: they appear naturally in many settings, including lattice Chern–Simons theories and sequential quantum circuits.
+"""
+tags = ["Anomalies", "LSM constraints", "Gravitational anomalies", "Higher central charge"]
+

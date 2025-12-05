@@ -1,7 +1,7 @@
 type = "card"
 title = "Research Interests"
 description = "Broad directions I am currently pursuing in condensed matter theory."
-
+ 
 [[items]]
 title = "Strongly correlated 2D materials and moiré systems"
 subtitle = "Graphene multilayers and twisted TMDs"

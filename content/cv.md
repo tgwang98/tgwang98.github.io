@@ -37,7 +37,10 @@
 **Referee**  
 - Nature, Nature Communications (*2024 – Present*).  
 - Physical Review X, Physical Review Letters, Physical Review B, Physical Review Research (*2022 – Present*).
-- Reports on Progress in Physics and other IOP journals (*2025 – Present*).  
+- Reports on Progress in Physics (*2025 – Present*).  
+
+**Proposal Reviewer**  
+- Theoretical Condensed Matter Physics (TCMP) program, U.S. Department of Energy, Office of Basic Energy Sciences (*2025 – Present*).
 
 **Teaching & Mentoring**  
 - Graduate Student Instructor, UC Berkeley Physics  
